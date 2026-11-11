@@ -1,0 +1,30 @@
+# Reference documents (not redistributed)
+*.pdf
+
+# Windows download metadata (WSL)
+*:Zone.Identifier
+*.Identifier
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# OpenSCAD exports
+*.stl
+*.3mf
+*.amf
+*.off

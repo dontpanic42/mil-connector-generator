@@ -1,0 +1,27 @@
+# Hole diameter in mm for each contact size in the generated OpenSCAD model.
+#
+# Start values are the nominal pin diameters from MIL-DTL-26482H, figure 7,
+# dimension A (page 27). Increase them to compensate for print shrinkage.
+
+[hole_dia_mm]
+20 = 2.5    # 1.02   # pin .040 in
+16 = 1.59   # pin .0625 in
+12 = 2.39   # pin .094 in
+
+# Counterbore at the rear face (wire side) for the contact's collar.
+# Sizes without an entry get a straight hole. Size 20: collar .099-.103 in
+# (2.52-2.62 mm) wide and .029-.033 in (0.74-0.84 mm) thick, 12.17-12.32 mm
+# behind the contact front.
+
+[counterbore_dia_mm]
+20 = 3.0
+
+[counterbore_depth_mm]
+20 = 0.85
+
+# Hole diameter in the retainer plate, which holds the contact collars in
+# their counterbores. Must be larger than the crimp barrel and smaller than the
+# collar. Size 20: barrel .075-.078 in (1.91-1.98 mm), collar min 2.52 mm.
+
+[retainer_hole_dia_mm]
+20 = 2.2

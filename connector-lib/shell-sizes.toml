@@ -1,0 +1,166 @@
+# MIL-DTL-26482 plug shell dimensions per shell size.
+#
+# Source: MIL-DTL-26482H, FIGURE 5 "Connector intermateability control
+# dimensions (series 1 and series 2)". Values are in inches, as in the
+# standard (metric equivalents there are for information only).
+#
+#   Drawings ............................ page 16 (plugs and receptacles), 17 (details), 21 (keys)
+#   Key widths, insert face details ..... page 17 ([common] below)
+#   Key angles .......................... page 21 ([common] below)
+#   P, R, S, T .......................... page 19
+#   U, V, W, X, Y, Z .................... page 20
+#
+# The table letters are kept so values can be checked against the standard.
+# Toleranced values are [min, max]; single values are a min or max limit.
+#
+#   insert_dia_max    P  max insert diameter                    (page 19)
+#   shell_id_min      Z  min plug shell ID (room for insert)   (page 20)
+#   shell_od          Y  plug shell OD                          (page 20)
+#   key_dia           X  diameter over plug keys                (page 20)
+#   coupling_ring_id  W  coupling ring ID                       (page 20)
+#   groove_dia        V  coupling ring bayonet groove diameter  (page 20)
+#
+# Mating receptacle (for reference, page 19/20):
+#   receptacle_shell_id  R  receptacle shell ID
+#   keyway_dia           S  diameter over receptacle keyways
+#   receptacle_shell_od  T  receptacle shell OD
+#   bayonet_dia          U  diameter over receptacle bayonet pins
+
+# Dimensions common to all shell sizes (page 17).
+[common]
+# "Plug keys/receptacle keyways mating detail". 1 master + 4 minor keys.
+master_key_width     = [0.108, 0.116]
+minor_key_width      = [0.040, 0.048]
+master_keyway_width  = [0.125, 0.133]
+minor_keyway_width   = [0.062, 0.070]
+# Plug key positions, clockwise from the master key, viewed from the plug
+# engaging face (page 21, "Plug keys and bayonet grooves").
+master_key_angle     = 0
+minor_key_angles     = [105, 140, 215, 265]
+
+# Detail A: socket insert face, per contact size.
+[common.socket_insert.entry_dia]         # contact entry hole at the face
+"20" = [0.049, 0.059]
+"16" = [0.071, 0.081]
+"12" = [0.102, 0.112]
+
+[common.socket_insert.counterbore_dia]   # receives the pin insert seal boss
+"20xx" = [0.092, 0.096]
+"20"   = [0.114, 0.118]
+"16"   = [0.146, 0.150]
+"12"   = [0.206, 0.210]
+
+# Detail B: pin insert resilient face seal, per contact size.
+[common.pin_insert.seal_boss_dia]
+"20xx" = [0.084, 0.090]
+"20"   = [0.106, 0.112]
+"16"   = [0.138, 0.144]
+"12"   = [0.198, 0.204]
+
+[8]
+insert_dia_max      = 0.285
+shell_id_min        = 0.292
+shell_od            = [0.352, 0.358]
+key_dia             = [0.392, 0.403]
+coupling_ring_id    = [0.480, 0.486]
+groove_dia          = [0.570, 0.581]
+receptacle_shell_id = [0.361, 0.367]
+keyway_dia          = [0.406, 0.417]
+receptacle_shell_od = [0.468, 0.474]
+bayonet_dia         = [0.547, 0.563]
+
+[10]
+insert_dia_max      = 0.402
+shell_id_min        = 0.409
+shell_od            = [0.480, 0.486]
+key_dia             = [0.520, 0.531]
+coupling_ring_id    = [0.601, 0.607]
+groove_dia          = [0.691, 0.702]
+receptacle_shell_id = [0.489, 0.495]
+keyway_dia          = [0.534, 0.545]
+receptacle_shell_od = [0.585, 0.591]
+bayonet_dia         = [0.664, 0.680]
+
+[12]
+insert_dia_max      = 0.516
+shell_id_min        = 0.523
+shell_od            = [0.592, 0.598]
+key_dia             = [0.669, 0.680]
+coupling_ring_id    = [0.760, 0.766]
+groove_dia          = [0.865, 0.876]
+receptacle_shell_id = [0.606, 0.612]
+keyway_dia          = [0.683, 0.694]
+receptacle_shell_od = [0.745, 0.751]
+bayonet_dia         = [0.843, 0.859]
+
+[14]
+insert_dia_max      = 0.641
+shell_id_min        = 0.648
+shell_od            = [0.717, 0.723]
+key_dia             = [0.794, 0.805]
+coupling_ring_id    = [0.884, 0.890]
+groove_dia          = [0.989, 1.000]
+receptacle_shell_id = [0.731, 0.737]
+keyway_dia          = [0.808, 0.819]
+receptacle_shell_od = [0.870, 0.876]
+bayonet_dia         = [0.968, 0.984]
+
+[16]
+insert_dia_max      = 0.766
+shell_id_min        = 0.772
+shell_od            = [0.842, 0.848]
+key_dia             = [0.919, 0.930]
+coupling_ring_id    = [1.009, 1.015]
+groove_dia          = [1.114, 1.125]
+receptacle_shell_id = [0.856, 0.862]
+keyway_dia          = [0.933, 0.944]
+receptacle_shell_od = [0.995, 1.001]
+bayonet_dia         = [1.092, 1.108]
+
+[18]
+insert_dia_max      = 0.855
+shell_id_min        = 0.862
+shell_od            = [0.942, 0.948]
+key_dia             = [1.019, 1.030]
+coupling_ring_id    = [1.135, 1.141]
+groove_dia          = [1.239, 1.250]
+receptacle_shell_id = [0.961, 0.967]
+keyway_dia          = [1.033, 1.044]
+receptacle_shell_od = [1.120, 1.126]
+bayonet_dia         = [1.217, 1.233]
+
+[20]
+insert_dia_max      = 0.980
+shell_id_min        = 0.987
+shell_od            = [1.067, 1.073]
+key_dia             = [1.144, 1.155]
+coupling_ring_id    = [1.259, 1.265]
+groove_dia          = [1.364, 1.375]
+receptacle_shell_id = [1.088, 1.094]
+keyway_dia          = [1.158, 1.169]
+receptacle_shell_od = [1.245, 1.251]
+bayonet_dia         = [1.342, 1.358]
+
+[22]
+insert_dia_max      = 1.105
+shell_id_min        = 1.111
+shell_od            = [1.192, 1.198]
+key_dia             = [1.269, 1.280]
+coupling_ring_id    = [1.384, 1.390]
+groove_dia          = [1.489, 1.500]
+receptacle_shell_id = [1.211, 1.217]
+keyway_dia          = [1.283, 1.294]
+receptacle_shell_od = [1.370, 1.376]
+bayonet_dia         = [1.467, 1.483]
+
+[24]
+insert_dia_max      = 1.229
+shell_id_min        = 1.237
+shell_od            = [1.317, 1.323]
+key_dia             = [1.394, 1.405]
+coupling_ring_id    = [1.509, 1.515]
+groove_dia          = [1.618, 1.629]
+receptacle_shell_id = [1.336, 1.342]
+keyway_dia          = [1.408, 1.419]
+receptacle_shell_od = [1.495, 1.501]
+bayonet_dia         = [1.594, 1.610]

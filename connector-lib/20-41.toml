@@ -1,0 +1,54 @@
+# MIL-DTL-26482 insert arrangement 20-41: 41 contacts, size 20.
+# Source: MIL-STD-1669A, figure 8 (shell size 20, continued).
+# Contact positions in inch, viewed from the engaging face of the pin insert.
+# size is the contact size.
+#
+# Note: the standard's mm values for p/q (Y -.135 "2.43", should be 3.43) and
+# X (Y +.284 "7.20", should be 7.21) are misprints; the inch values put p/q on
+# the same .150 in circle as k, m, n, r and s.
+
+shell = 20
+arrangement = 41
+
+[contacts]
+A = { x =  0.000, y = +0.418, size = 20 }
+B = { x = +0.129, y = +0.397, size = 20 }
+C = { x = +0.245, y = +0.338, size = 20 }
+D = { x = +0.338, y = +0.245, size = 20 }
+E = { x = +0.397, y = +0.129, size = 20 }
+F = { x = +0.418, y =  0.000, size = 20 }
+G = { x = +0.397, y = -0.129, size = 20 }
+H = { x = +0.338, y = -0.245, size = 20 }
+J = { x = +0.245, y = -0.338, size = 20 }
+K = { x = +0.129, y = -0.397, size = 20 }
+L = { x =  0.000, y = -0.418, size = 20 }
+M = { x = -0.129, y = -0.397, size = 20 }
+N = { x = -0.245, y = -0.338, size = 20 }
+P = { x = -0.338, y = -0.245, size = 20 }
+R = { x = -0.397, y = -0.129, size = 20 }
+S = { x = -0.418, y =  0.000, size = 20 }
+T = { x = -0.397, y = +0.129, size = 20 }
+U = { x = -0.338, y = +0.245, size = 20 }
+V = { x = -0.245, y = +0.338, size = 20 }
+W = { x = -0.129, y = +0.397, size = 20 }
+X = { x =  0.000, y = +0.284, size = 20 }
+Y = { x = +0.132, y = +0.251, size = 20 }
+Z = { x = +0.233, y = +0.161, size = 20 }
+a = { x = +0.281, y = +0.034, size = 20 }
+b = { x = +0.265, y = -0.101, size = 20 }
+c = { x = +0.188, y = -0.212, size = 20 }
+d = { x = +0.068, y = -0.275, size = 20 }
+e = { x = -0.068, y = -0.275, size = 20 }
+f = { x = -0.188, y = -0.212, size = 20 }
+g = { x = -0.265, y = -0.101, size = 20 }
+h = { x = -0.281, y = +0.034, size = 20 }
+i = { x = -0.233, y = +0.161, size = 20 }
+j = { x = -0.132, y = +0.251, size = 20 }
+k = { x =  0.000, y = +0.150, size = 20 }
+m = { x = +0.117, y = +0.094, size = 20 }
+n = { x = +0.146, y = -0.033, size = 20 }
+p = { x = +0.065, y = -0.135, size = 20 }
+q = { x = -0.065, y = -0.135, size = 20 }
+r = { x = -0.146, y = -0.033, size = 20 }
+s = { x = -0.117, y = +0.094, size = 20 }
+t = { x =  0.000, y =  0.000, size = 20 }

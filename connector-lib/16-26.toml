@@ -1,0 +1,38 @@
+# MIL-DTL-26482 insert arrangement 16-26: 26 contacts, size 20, service rating I.
+# Source: MIL-STD-1669A, page 27 (PDF page 30).
+# Contact positions in inch, viewed from the engaging face of the pin insert.
+# size is the contact size.
+#
+# Note: the standard's mm values for F/L (Y -.161 "4.34") and S/T (Y +.177
+# "4.96") are misprints; the inch values match other arrangements.
+
+shell = 16
+arrangement = 26
+
+[contacts]
+A = { x =  0.000, y = +0.321, size = 20 }
+B = { x = +0.131, y = +0.293, size = 20 }
+C = { x = +0.239, y = +0.214, size = 20 }
+D = { x = +0.305, y = +0.099, size = 20 }
+E = { x = +0.319, y = -0.034, size = 20 }
+F = { x = +0.278, y = -0.161, size = 20 }
+G = { x = +0.189, y = -0.260, size = 20 }
+H = { x = +0.067, y = -0.314, size = 20 }
+J = { x = -0.067, y = -0.314, size = 20 }
+K = { x = -0.189, y = -0.260, size = 20 }
+L = { x = -0.278, y = -0.161, size = 20 }
+M = { x = -0.319, y = -0.034, size = 20 }
+N = { x = -0.305, y = +0.099, size = 20 }
+P = { x = -0.239, y = +0.214, size = 20 }
+R = { x = -0.131, y = +0.293, size = 20 }
+S = { x = -0.070, y = +0.177, size = 20 }
+T = { x = +0.070, y = +0.177, size = 20 }
+U = { x = +0.175, y = +0.094, size = 20 }
+V = { x = +0.178, y = -0.036, size = 20 }
+W = { x = +0.119, y = -0.151, size = 20 }
+X = { x =  0.000, y = -0.203, size = 20 }
+Y = { x = -0.119, y = -0.151, size = 20 }
+Z = { x = -0.178, y = -0.036, size = 20 }
+a = { x = -0.175, y = +0.094, size = 20 }
+b = { x =  0.000, y = +0.065, size = 20 }
+c = { x =  0.000, y = -0.065, size = 20 }
