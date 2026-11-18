@@ -12,4 +12,4 @@ Libraries in `connector-lib/`:
 
 Reference documents: `MIL-STD-1669A.pdf` (insert arrangements), `MIL-DTL-26482H-1.pdf` (connector dimensions).
 
-After every change, the unit tests should be updated and run successfully.
+After every change, the unit tests should be updated and run successfully. The README.md should also be updated.
