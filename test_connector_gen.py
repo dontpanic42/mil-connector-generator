@@ -224,6 +224,13 @@ class ArrangementTest(unittest.TestCase):
         r_max = load_shell("20")["insert_dia_max"] / 2
         self.assertTrue(all((c.x_in**2 + c.y_in**2) ** 0.5 < r_max for c in contacts))
 
+    def test_library_10_6(self):
+        shell, contacts = load_arrangement(LIB / "10-6.toml")
+        self.assertEqual(shell, "10")
+        self.assertEqual([c.label for c in contacts], list("ABCDEF"))
+        self.assertEqual({c.size for c in contacts}, {"20"})
+        self.assertEqual((contacts[1].x_in, contacts[1].y_in), (0.113, 0.065))
+
     def test_missing_size(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "x.toml"

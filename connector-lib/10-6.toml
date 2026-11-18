@@ -1,0 +1,15 @@
+# MIL-DTL-26482 insert arrangement 10-6: 6 contacts, size 20, service rating I.
+# Source: MIL-STD-1669A, figure 3 (shell size 10). Supersedes MS33709-6.
+# Contact positions in inch, viewed from the engaging face of the pin insert.
+# size is the contact size. Alternate insert position W = 90 deg (not modelled).
+
+shell = 10
+arrangement = 6
+
+[contacts]
+A = { x =  0.000, y = +0.130, size = 20 }
+B = { x = +0.113, y = +0.065, size = 20 }
+C = { x = +0.113, y = -0.065, size = 20 }
+D = { x =  0.000, y = -0.130, size = 20 }
+E = { x = -0.113, y = -0.065, size = 20 }
+F = { x = -0.113, y = +0.065, size = 20 }
